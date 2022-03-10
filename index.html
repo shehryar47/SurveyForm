@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Form</h1>
+    <p id="description">This is a form</p>
+    <main>
+        
+
+        <form action="" id="survey-form">
+
+            <!-- Name -->
+            <div class="name">
+                <label for="name" id="name-label">Name: </label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            </div>
+
+
+            <!-- Email -->
+            <div class="email">
+                <label for="email" id="email-label">Email: </label><br>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+
+
+            <!-- number age -->
+            <div class="age">
+                <label for="number" id="number-label">Age: </label><br>
+                <input type="number" name="age" id="number" min="10" step="1" max="100" placeholder="Age">
+            </div>
+
+
+            <!-- dropdown menu for role -->
+            <div class="dropdown">
+                <label for="role">Current Role: </label><br>
+                <select name="role" id="dropdown">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="part-time-job">Part Time Job</option>
+                </select>
+            </div>
+
+
+            <!-- Gender -->
+            <div class="gender">
+                <p>Gender: </p>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="notsay" name="gender" value="notsay">
+                <label for="notsay">Prefer Not to Say</label>
+            </div>
+
+
+            <!-- Checkboxes -->
+            <div class="checkbox">
+                <p>Tell us you favourite Fruit:</p>
+                <input type="checkbox" id="banana" name="fruit" value="banana">
+                <label for="banana">Banana</label><br>
+                <input type="checkbox" id="apple" name="fruit" value="apple">
+                <label for="apple">Apple</label><br>
+                <input type="checkbox" id="orange" name="fruit" value="orange">
+                <label for="orange">Orange</label>
+            </div>
+
+            <!-- textarea -->
+            <div class="story">
+                <label for="story">Tell us your story:</label><br>
+                <textarea id="story" name="story" rows="5" cols="33">Write you Story here</textarea>
+            </div>
+
+
+            <!-- Submit  -->
+            <div class="submit">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

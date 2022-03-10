@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+html{
+font-size: 15px;
+background: url(background.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+*{
+    font-family: 'Hubballi', cursive;
+}
+body{
+    
+    margin: 0;
+    color: rgb(255, 255, 255);
+    
+}
+main{
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+   margin: 5% auto;
+   background-color: rgba(35, 43, 1, 0.767);
+   width: 50%;
+   height: auto;
+   font-size: 2rem;
+   border-radius: 30px;
+   position: relative;
+   
+   
+}
+@media(max-width:600px){
+    main{
+        width:100%;
+        font-size: 1.5rem;
+    }
+}
+form{
+    margin: 0;
+    padding: 20px;
+    border: solid 10px black;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(9, 58, 80, 0.733);
+    
+    
+}
+#description, #title{
+    font-size: 3rem;
+    width: 550px;
+    margin: 5% auto 2% auto;
+    text-align: center;
+}
+@media(max-width:600px){
+    #description, #title{
+        font-size: 2rem;
+        width: 150px;
+        margin: 5% auto 2% auto;
+        
+        
+}}
+
+input[type="text" ], input[type="email"], input[type="number"], select, textarea, #submit{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    
+}
+.story{
+    margin: 10px 0;
+}
+#submit{
+    background-color: rgba(9, 255, 79, 0.493);
+}
